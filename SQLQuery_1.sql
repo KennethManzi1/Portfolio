@@ -107,7 +107,7 @@ ORDER BY 2,3
 
 --Using CTE to create rollingvaccinatedpeople column.
 
-WITH popvsVac (continent, Location, Date, Population, new_vaccinations, RollingpeopleVaccinated) --This will create a common table expression for population vs vaccinated so that we can pull Rollingpeople Vaccinated as a column
+WITH popvsVac --This will create a common table expression for population vs vaccinated so that we can pull Rollingpeople Vaccinated as a column
 AS
 (
 SELECT de.continent, de.[location], de.date, de.population, va.new_vaccinations,
